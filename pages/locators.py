@@ -17,3 +17,4 @@ class ProductPageLocators():
     NAME_BOOK = By.CSS_SELECTOR, ".product_main h1"
     PRICE_MESSAGE = By.CSS_SELECTOR, "#messages>:nth-child(3) strong"
     PRICE = By.CSS_SELECTOR, ".product_main .price_color"
+    SUCCESS_MESSAGE=By.CSS_SELECTOR,".alertinner"
