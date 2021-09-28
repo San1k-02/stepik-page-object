@@ -12,12 +12,12 @@ class LoginPage(BasePage):
         #assert True
 
     def should_be_login_form(self):
-        assert self.is_element_present(*LoginPageLocators.Login_email), "No login email entry field"
-        assert self.is_element_present(*LoginPageLocators.Login_password), "No login password entry field"
+        assert self.is_element_present(*LoginPageLocators.LOGIN_EMAIL), "No login email entry field"
+        assert self.is_element_present(*LoginPageLocators.LOGIN_PASSWORD), "No login password entry field"
         #assert True
 
     def should_be_register_form(self):
-        assert self.is_element_present(*LoginPageLocators.Registration_email), "No registration email entry field"
-        assert self.is_element_present(*LoginPageLocators.Registration_password1), "No registration password1 entry field"
-        assert self.is_element_present(*LoginPageLocators.Registration_password2), "No registration password2 entry field"
+        assert self.is_element_present(*LoginPageLocators.REGISTRATION_EMAIL), "No registration email entry field"
+        assert self.is_element_present(*LoginPageLocators.REGISTRATION_PASSWORD1), "No registration password1 entry field"
+        assert self.is_element_present(*LoginPageLocators.REGISTRATION_PASSWORD1), "No registration password2 entry field"
         #assert True
