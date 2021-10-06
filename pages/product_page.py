@@ -22,4 +22,8 @@ class ProductPage(BasePage):
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
             "Success message is presented, but should not be"
 
+    def go_to_basket(self):
+        go_to_basket_button=self.browser.find_element(*ProductPageLocators.GO_TO_BASKET_LINK)
+        go_to_basket_button.click()
+
     
